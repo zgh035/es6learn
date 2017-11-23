@@ -17,6 +17,7 @@ console.log(str.codePointAt(0).toString())
 
 //使用length获取s的长度为3，使用for/of循环可以得到正确的长度
 let s1 = '𠮷a';
+//for/of可以识别大于0xffff的码点，可以正确的读出字符串的长度
 for(let ch of s1) {
     console.log(ch.codePointAt(0).toString())
 }
@@ -37,5 +38,3 @@ console.log(s1.getLen())
 function is32Bit (c) {
     return c.codePointAt(0) > 0xFFFF;
 }
-
-console.log(String.fromCharCode('a'.codePointAt(0)))
