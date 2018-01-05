@@ -1,0 +1,7 @@
+跨自定义组件的后代选择器：.the-ancestor >>> .the-descendant
+
+属性名中不要使用数字
+
+nodesRef.fields只能返回微信内置组建的properties
+
+selectComponent挂在this下面的，根据选择器来获取组件，相当于vue中的ref获取组件，执行组件的方法
